@@ -1,0 +1,27 @@
+div{
+    background-color: black;
+    width: 400px;
+    border: 1px solid orange;
+    text-align: center;
+}
+
+
+h1{
+    color: white
+}
+
+
+
+nav{
+    display: inline-block;
+    width: 400px;
+    background-color: orangered;
+
+
+}
+
+
+a{
+    display: inline-flex;
+    text-decoration: dotted;
+color: white}   
