@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos</title>
+    <style>
+     body {
+        background: linear-gradient(80deg, yellow, blue);
+     }
+
+    div{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .box-mestre{
+        display: flex;
+        height: 1000px;
+    }
+    .box1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:400px ;
+        height:400px;
+        background-color: blue;
+        transition: background-color 0.9s ease, transform 0.8s ease;
+    }
+
+    .box1:hover{
+        background-color: black;
+        transform: scale(1.5);
+    }
+
+    .box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:200px ;
+        height:200px;  
+        background-color: chocolate;  
+        transition: background-color 0.5s ease, transform 0.7;
+        
+    }
+    
+    .box2:hover {
+        background-color: black;
+        transform: rotate(300deg);
+    }
+
+    .box3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100px;
+        height:100px;
+        background-color: red;
+        transition: transform 0.5s;
+
+    }
+
+    .box3:hover{
+    transform:translate(50px, 50px);
+
+    }
+    .box4{
+        display: flex;
+        width: 500px;
+        height: 500px;
+        background-color: black;          
+    }
+
+    .box5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        background-color:  #3498db;;
+        opacity: 1;
+        transition: opacity 0.5s;
+
+    }
+
+    .box5:hover {
+        opacity: 0.5;
+    }
+    /* É definido os passos da animação */
+    @keyframes moverEfeito {
+    0% {
+    transform: translateX(0);
+    background-color: black;
+    }
+    50% {
+    transform: translateX(200px);
+    background-color: blue;
+    }
+    50% {
+    transform: translateX(0);
+    background-color: yellow;
+    }
+    }
+    /*É aplicado o a animação*/
+    .box6 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    }
+    .box6:hover{
+        animation: moverEfeito 9s ease-in-out infinite;
+    } 
+    
+    
+    
+</style>
+</head>
+<body>
+<div class="box-mestre">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div> 
+    <div class="box6"></div>  
+</div> 
+</body>
+</html>
