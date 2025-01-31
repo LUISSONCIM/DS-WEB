@@ -1,0 +1,7 @@
+var Montante = Number(prompt("Digite o  numero"))
+var Capital = Number(prompt("Digite o  numero"))
+var Taxa = Number(prompt("Digite o numero"))
+console.log (typeof(Montante)) 
+console.log (typeof(Capital)) 
+console.log (typeof(Taxa)) 
+alert((Capital * (1+Taxa) +Taxa))
