@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+
+}
+h5 {
+  color: #fff;
+  text-shadow: 0 0 10px #00f, 0 0 15px #00f, 0 0 15px #00f; /* Brilho azul */
+}
